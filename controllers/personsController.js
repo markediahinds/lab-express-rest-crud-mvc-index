@@ -6,4 +6,4 @@ persons.get('/', (req, res) => {
     res.json(personsArray)
 })
 
-module.exports  persons
+module.exports = persons

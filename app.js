@@ -7,11 +7,11 @@ const specialEventsController = require('./controllers/special-eventsController'
 
 const app = express()
 
-app.use('locations', locationsController)
-app.use('machines', machinesController)
-app.use('persons', personsController)
-app.use('plans', plansController)
-app.use('special-events', specialEventsController)
+app.use('/locations', locationsController)
+app.use('/machines', machinesController)
+app.use('/persons', personsController)
+app.use('/plans', plansController)
+app.use('/special-events', specialEventsController)
 
 app.get('/', (req, res) => {
     res.send(`M.O.K.A Express Fitness`)
